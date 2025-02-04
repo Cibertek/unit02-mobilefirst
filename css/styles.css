@@ -7,7 +7,6 @@
 
 body {
   font-family: "Roboto", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
@@ -75,6 +74,7 @@ main {
   padding-top: 20px;
 }
 .intro-txt {
+  font-family: "Varela", sans-serif;
   color: gray;
   font-size: 1.15em;
   padding: 2px 20px 1px 20px;
@@ -119,6 +119,11 @@ main {
   padding-left: 2.5em;
   padding-right: 2.5em;
   padding-bottom: 3em;
+  padding-top: 2.5em;
+}
+
+.skills {
+  background-color: rgb(237, 237, 237);
 }
 .contact{
   padding-left: 15em;
@@ -137,7 +142,7 @@ main {
     margin: 2px;
 }
 #contact-txt {
-  padding-bottom: 2em;
+  padding-bottom: .5rem;
 }
 .contact-txt {
   display: block;
@@ -149,17 +154,21 @@ footer {
   width: 100%;
   float: left;
 }
+.bottom-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #bottom-name {
-  float: left;
   font-size: 1em;
   font-weight: bold;
   padding-left: .75em;
 }
 #bt-top {
   font-weight: 900;
-  float: right;
   padding-right: 1em;
-}
+} 
 #bt-top a {
   color: #333;
 }
