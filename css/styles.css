@@ -4,11 +4,118 @@
 * {
 	box-sizing: border-box;
 }
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  background-color: #f3f3f3;
+  color: black;
+  max-width: 1000px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.student-name {
+  font-size: 1.4em;
+  margin: 0;
+  padding-bottom: 1px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
 /* ---- Navigation ---- */
+
+.top-nav {
+  margin-top: 5px;
+}
+.top-nav a {
+  font-size: .95em;
+  font-weight: bold;
+  color: #333;
+  background-color: white;
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+.student-name, .top-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+main {
+  background-color: #fff;
+  padding-top: 20px;
+}
+#portfolio {
+  text-align: center;
+  background-color: #fff;
+  padding-top: 2em;
+}
+.port {
+  padding: 1em;
+  margin: 0 .5em .8em;
+}
+.port-img {
+  max-width: 350px;
+}
+
+/* =====Top Banner styles======= */
+.top-banner {
+  padding-bottom: 2.75em;
+  text-align: center;
+}
+/* ==== skills and contact section styles */
+.section-heading {
+  text-align: center;
+  font-size: 1.2em;
+}
+.skills, .contact {
+  text-align: center;
+  border-top: 1px dotted #cfcfcf;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  padding-bottom: 3em;
+}
+.contact{
+  padding-left: 15em;
+  padding-right: 15em;
+}
+.skills li:nth-child(odd) {
+  background: #7a5ef5;
+}
+
+.skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #5f5b56;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+}
+#contact-txt {
+  padding-bottom: 2em;
+}
+footer {
+  width: 100%;
+  float: left;
+}
+#bottom-name {
+  float: left;
+  font-size: 1em;
+  font-weight: bold;
+}
+#bt-top {
+  float: right;
+}
 
 /* ================================= 
   Media Queries
