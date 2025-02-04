@@ -4,69 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit02 Mobile First</title>
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/flexbox.css">
 </head>
 <body>
     <div id="top" class="wrapper">
     <header class="main-header">
-        <h1 class="student-name">J.Phillipe Nelson</h1>
+        <h1 class="student-name">J. Phillipe Nelson</h1>
         <nav class="main-nav">
           <ul class="top-nav">
-            <li class="nav1"><a href="#">Home</a></li>
-            <li class="nav2"><a href="#">Portfolio</a></li>
-            <li class="nav3"><a href="#">Skills</a></li>
-            <li class="nav4"><a href="#">Contact</a></li>
+            <li class="nav1"><a href="#top">Home</a></li>
+            <li class="nav2"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav3"><a href="#skills">Skills</a></li>
+            <li class="nav4"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
     </header>
     
         <div class="top-banner">
-            <img src="images/responsive-layout-profile.png" alt="profile image of self">
-            <p class="intro-txt">Hi Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem recusandae aut, quos suscipit exercitationem quo tenetur ipsa harum blanditiis aperiam accusantium facilis fugit enim dicta assumenda inventore. Distinctio, ex?</p>
+            <img src="images/responsive-layout-profile.png" id="img-profile" alt="profile image of self">
+            <p class="intro-txt">Hi! I'm a front-end web developer who loves responsive design and css. I recently finsihed a degree in front-end web development at Treehouse and I am excited to put all my skills to use!</p>
         </div>
         <main>
             <!-- Start of Portfolio section -->
-            <h2 class="section-heading">PORTFOLIO</h2>
+            <h2 class="section-heading" id="portfolio">PORTFOLIO</h2>
             <div class="portfolio">
                 <div class="marketing port">
                     <img id="portfolio-1" class="port-img" src="images/portfolio-1.png" alt="picture of a marketing logo">
                     <h2 class="headline">Marketing Page</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus minima quas, accusamus, modi, error adipisci assumenda cum voluptas atque aliquam facilis expedita maxime nemo alias qui illum est earum quibusdam?</p>
+                    <p class="port-txt">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
                 </div>
                 <div class="search port">
                     <img id="portfolio-2" class="port-img" src="images/portfolio-2.png" alt="search image logo">
                     <h2 class="headline">Search Page</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus minima quas, accusamus, modi, error adipisci assumenda cum voluptas atque aliquam facilis expedita maxime nemo alias qui illum est earum quibusdam?</p>
+                    <p class="port-txt">This project searches through a specific database to find information that the user is trying to look up.</p>
                 </div>
                 <div class="travel-app port">
                     <img id="portfolio-3" class="port-img" src="images/portfolio-3.png" alt="Travel image logo">
                     <h2 class="headline">Travel App</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus minima quas, accusamus, modi, error adipisci assumenda cum voluptas atque aliquam facilis expedita maxime nemo alias qui illum est earum quibusdam?</p>
+                    <p class="port-txt">This project compares travel times based on different transportation methods and tells you the best one.</p>
                 </div>
                 <div class="map-favs port">
                     <img id="portfolio-4" class="port-img" src="images/portfolio-4.png" alt="Map of favorites logo">
                     <h2 class="headline">Map of Favorite Spots</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus minima quas, accusamus, modi, error adipisci assumenda cum voluptas atque aliquam facilis expedita maxime nemo alias qui illum est earum quibusdam?</p>
+                    <p class="port-txt">This project uses mapping apps to plot points for my favorite spots in the city for a do-it-yourself walking tour</p>
                 </div>
                 <div class="photo-gallery port">
                     <img id="portfolio-5" class="port-img" src="images/portfolio-5.png" alt="Photo Gallery logo">
                     <h2 class="headline">Photo Gallery</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus minima quas, accusamus, modi, error adipisci assumenda cum voluptas atque aliquam facilis expedita maxime nemo alias qui illum est earum quibusdam?</p>
+                    <p class="port-txt">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
                 </div>
                 <div class="calculator port">
                     <img id="calculator" class="port-img" src="images/portfolio-6.png" alt="Calculator logo">
                     <h2 class="headline">Calculator</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus minima quas, accusamus, modi, error adipisci assumenda cum voluptas atque aliquam facilis expedita maxime nemo alias qui illum est earum quibusdam?</p>
+                    <p class="port-txt">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
                 </div>
             </div>
         </main>
         <section>
-            <div class="skills">
+            <div class="skills" id="skills">
                 <h2 class="section-heading">Skills</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium recusandae, ea cupiditate in autem sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus modi facilis.</p>
+                <p>We are a pro WordPress specialty developer and specialize in the following skills:</p>
                 <ul class="skills-list">
                     <li class="skill1">HTML</li>
                     <li class="skill2">CSS</li>
@@ -79,17 +82,17 @@
                 </ul>                                 
             </div>
         </section>
-        <section>
-            <div class="contact">
+        <section id="contact">
+            <div class="contact-txt">
                 <h2 class="section-heading">Contacts</h2>
-                <p id="contact-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati illo, cupiditate omnis harum tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p id="contact-txt">These are my basic contact points and can be reached Monday thru Friday, 9am to 12 noon (EST).</p>
                 <p>Phone <strong>+1 (111) 555-1234</strong></p>
                 <p>Email <strong>myprivateemail@yoursite.com</strong></p>
             </div>
         </section>
         </main>
         <footer class="bottom-box">
-            <p id="bottom-name">J.Phillipe Nelson</p>
+            <p id="bottom-name">J. Phillipe Nelson</p>
             <p id="bt-top"><a href="#top">Back to Top</a></p>
         </footer>
     </div>
