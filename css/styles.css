@@ -92,6 +92,7 @@ main {
 }
 .port-img {
   max-width: 350px;
+  width: 100%;
   display: block;
   margin: auto;
 }
@@ -147,12 +148,11 @@ main {
 .contact-txt {
   display: block;
   text-align: center;
-  padding: 0 10px 0 10px;
-  border-top: .12em dotted #c1c1c1;
+  padding: 30px 10px 40px 10px;
+  border-bottom: .12em dotted #c1c1c1;
 }
 footer {
   width: 100%;
-  float: left;
 }
 .bottom-box {
   display: flex;
@@ -163,7 +163,9 @@ footer {
 #bottom-name {
   font-size: 1em;
   font-weight: bold;
-  padding-left: .75em;
+}
+.bottom-nav {
+  display: none;
 }
 #bt-top {
   font-weight: 900;
@@ -175,7 +177,95 @@ footer {
 #bt-top a:hover {
   color: #7a5ef5;
 }
-
+#contact-bot {
+  margin-right: 0px;
+}
 /* ================================= 
   Media Queries
 ==================================== */
+
+@media (min-width: 768px) {
+  .main-header, .main-nav, .top-nav, .top-banner, .portfolio, .bottom-nav {
+    display: flex;
+  }
+  .main-header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.5rem;
+  }
+  .top-banner {
+    flex-direction: row-reverse;
+  }
+  .intro-txt {
+    text-align: left;
+    padding: 0px 20px 15px 35px;
+    font-size: 1.25em;
+    margin-top: 0px;
+  }
+
+  #profile-img {
+    max-width: 300px;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+  }
+  .top-nav a {
+    background-color: #F3F3F3;
+  }
+  .portfolio {
+    flex-wrap: wrap;
+    width: auto;
+    padding: 1px;
+  }
+  .port {
+    width: 47%;
+  }
+  #img-profile {
+    width: 42%;
+    padding-right: 20px;
+  }
+  .port-img {
+    max-width: 355px;
+  }
+  #bt-top {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-header, .port {
+    width: 100%;
+    max-width: 1100px;
+  }
+  .intro-txt {
+    padding: 0px 40px 15px 10px;
+    font-size: 1.3em;
+    margin-top: 1px;
+  }
+  .port {
+    width: 31%;
+    padding: 0px;
+  }
+  .port img {
+    height: auto;
+    padding-right: 10px;
+  }
+
+  .travel-app, .calculator {
+    margin-right: 8px;
+    margin-left: 16px;
+  }
+  .search, .photo-gallery {
+    margin-right: 8px;
+    margin-left: 20px;
+  }
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
